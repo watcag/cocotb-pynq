@@ -1,0 +1,2 @@
+global-include *.v
+global-include *.hwh
