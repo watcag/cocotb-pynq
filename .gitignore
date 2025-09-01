@@ -1,0 +1,13 @@
+*.bit
+*.str
+*__pycache__/
+runtime_data/
+*.egg-info/
+sim_build/
+*tutorial/
+*vivado.jou
+*vivado.log
+build/
+*/build/*
+**/sample/*.vcd
+**/sample/*.xml
