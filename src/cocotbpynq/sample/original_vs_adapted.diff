@@ -1,0 +1,22 @@
+4,7c4,16
+< from pynq import Overlay
+< from pynq import MMIO
+< from pynq import allocate
+< from pynq import PL
+---
+> COCOTB_IS_RUNNING = (len(sys.argv) > 0) and (sys.argv[0] == "cocotb")
+> 
+> if (not COCOTB_IS_RUNNING):
+>     from pynq import Overlay
+>     from pynq import MMIO
+>     from pynq import allocate
+>     from pynq import PL
+> else:
+>     import cocotbpynq
+>     from cocotbpynq import Overlay
+>     from cocotbpynq import MMIO
+>     from cocotbpynq import allocate
+>     from cocotbpynq import PL
+50a60,61
+> elif COCOTB_IS_RUNNING:
+>     main = cocotbpynq.synctest(main)
