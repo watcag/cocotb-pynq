@@ -34,6 +34,10 @@ HWH file can be generated independantly of bitstream using the following Vivado 
 This can be used to circumvent the need to ever to bitstream generation. Unlike bitstream generation, this command only needs to be run if the block diagram is updated.
 
 
+## Acknowledgement
+This paper relies was built on the back of [cocotb](https://github.com/cocotb/cocotb), which is an amazing library in its own right.
+
+It also aims to mimic some features from [PYNQ](https://github.com/Xilinx/PYNQ). Naturally, the PYNQ repo was a large source of inspiration/reference for much of the content in this repo.
 
 ## Paper
 Our paper was presented at the 35th International Conference on Field-Programmable Logic and Applications(FPL 2025). The conference paper can be found here: < Proceedings not available yet >
